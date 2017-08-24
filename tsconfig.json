@@ -1,0 +1,20 @@
+﻿{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "types": [],
+    "moduleResolution": "node",
+    "lib": [ "es6", "dom", "es2015.iterable" ]
+
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
