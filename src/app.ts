@@ -20,4 +20,8 @@ angular.module("fruitStore").service("homeService", HomeService);
 angular.module("fruitStore").component("home", new HomeComponent());
 angular.module("fruitStore").component("fruitList", new FruitListComponent());
 
-angular.bootstrap(document.body, ['fruitStore'], { strictDi: false });
+//angular.bootstrap(document.body, ['fruitStore'], { strictDi: false });
+
+import {AppModule} from "./app.module";
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+platformBrowserDynamic().bootstrapModule(AppModule);

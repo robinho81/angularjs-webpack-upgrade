@@ -1,20 +1,17 @@
 ﻿{
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true,
-    "noImplicitAny": false,
-    "removeComments": true,
-    "experimentalDecorators": true,
-    "typeRoots": [
-      "./node_modules/@types"
-    ],
-    "types": [],
-    "moduleResolution": "node",
-    "lib": [ "es6", "dom", "es2015.iterable" ]
+    "compilerOptions": {
+      "target": "ES5",
+      "module": "commonjs",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
 
-  },
-  "include": [
-    "src/**/*"
-  ]
+      "noUnusedLocals": false,
+      "noUnusedParameters": false,
+      "lib": ["es2015", "dom"],
+      "noStrictGenericChecks": true
+    },
+    "include": [
+      "src/**/*"
+    ]
 }
