@@ -1,7 +1,6 @@
 ﻿var webpack = require('webpack');
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var nodeModulesDir = path.resolve(__dirname, '../node_modules');
 
 module.exports = {
     devtool: 'inline-source-map',
