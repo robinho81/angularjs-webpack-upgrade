@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {VegService} from './veg.service';
+import {HomeService} from '../homeService';
 
 @Component({
   selector: 'veg',
@@ -9,7 +10,8 @@ import {VegService} from './veg.service';
 export class VegComponent {
   private message:string;
 
-  constructor(vegService:VegService) {
+  constructor(vegService:VegService, homeService:HomeService) {
     this.message = "The veg (Angular2) component ";
+    homeService.logAMessage("Hello from the Angular VegComponent");
   }
 }

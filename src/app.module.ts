@@ -4,6 +4,7 @@ import { UpgradeModule } from '@angular/upgrade/static';
 import {VegComponent} from './veg/veg';
 import {VegService} from './veg/veg.service';
 import { HttpModule } from '@angular/http';
+import {homeServiceProvider} from "./ajs-upgraded-providers";
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { HttpModule } from '@angular/http';
     VegComponent
   ],
   providers: [
-    VegService
+    VegService,
+    homeServiceProvider
   ]
 })
 export class AppModule {

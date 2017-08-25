@@ -8,6 +8,10 @@ export class HomeService {
   }
 
   public doSomething():void {
+    console.log("Home Service was called...");
+  }
 
+  public logAMessage(msg:string):void {
+    console.log("Home Service the message was: "+msg)
   }
 }

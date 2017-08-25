@@ -4,6 +4,6 @@ import { Http } from '@angular/http';
 @Injectable()
 export class VegService {
     constructor(private http: Http) {
-        console.log("The veg service started");
+        console.log("The veg service was created");
     }
 }
