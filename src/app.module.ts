@@ -1,11 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { UpgradeModule } from '@angular/upgrade/static';
- 
+import {VegComponent} from './veg/veg';
+import {VegService} from './veg/veg.service';
+import { HttpModule } from '@angular/http';
+
 @NgModule({
   imports: [
     BrowserModule,
-    UpgradeModule
+    UpgradeModule,
+    HttpModule
+  ],
+  declarations: [
+    VegComponent
+  ],
+  entryComponents: [
+    VegComponent
+  ],
+  providers: [
+    VegService
   ]
 })
 export class AppModule {

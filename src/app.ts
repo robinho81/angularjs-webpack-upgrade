@@ -13,6 +13,7 @@ fruitStore.config(["$routeProvider","$locationProvider",
         $routeProvider
         .when("/", { template: "<home></home>" })
         .when("/fruit", { template: "<fruit-list></fruit-list>"})
+        .when("/veg", { template: "<veg></veg>"})
         .otherwise({ redirectTo: "/" });
 }]);
 
@@ -20,6 +21,13 @@ angular.module("fruitStore").service("homeService", HomeService);
 angular.module("fruitStore").component("home", new HomeComponent());
 angular.module("fruitStore").component("fruitList", new FruitListComponent());
 
+import { downgradeComponent } from '@angular/upgrade/static';
+import {VegComponent} from './veg/veg';
+angular.module('fruitStore')
+.directive(
+  'veg',
+  downgradeComponent({ component: VegComponent }) as angular.IDirectiveFactory
+);
 //angular.bootstrap(document.body, ['fruitStore'], { strictDi: false });
 
 import {AppModule} from "./app.module";
