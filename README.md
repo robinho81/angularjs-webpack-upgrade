@@ -19,3 +19,7 @@ The motivation for the project was that I couldn't find any good examples of doi
 1. Clone the repository
 2. npm install
 3. run webpack-dev-server
+
+Lastly, I should note that some of the inspiration for the Webpack configuration came from the following Repo:
+https://github.com/preboot/angular-webpack
+
